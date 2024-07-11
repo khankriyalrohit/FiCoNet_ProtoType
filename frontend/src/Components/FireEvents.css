@@ -1,0 +1,128 @@
+/* FireEvents.css */
+.FireEventsCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 20px auto; /* Center the card horizontally */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 900px; /* Set a maximum width for the card */
+  transition: transform 0.3s ease-in-out;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.FireEventsCard:hover {
+  background-color: #ed473bb6;
+  transform: scale(1.1);
+  transition-duration: 1.4s;
+}
+
+.FireEventsCard h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #d9534f; /* Red color for fire */
+  text-align: center; /* Center the heading */
+}
+
+.FireEventsCard p {
+  margin: 5px 0;
+  color: #555;
+  text-align: center; /* Center the text */
+}
+
+.FireEventsCard .section {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center; /* Center the section text */
+}
+
+.FireEventsCard .inner-wrap {
+  margin-top: 10px;
+}
+
+.FireEventsCard .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.FireEventsCard .row > div {
+  flex: 1;
+  min-width: 100px;
+  padding: 5px;
+  text-align: center; /* Center the content inside each column */
+}
+
+.FireEventsCard .col-md-1,
+.FireEventsCard .col-md-2,
+.FireEventsCard .col-md-3 {
+  flex-basis: calc(100% / 3 - 10px);
+}
+
+.FireEventsCard label {
+  font-weight: bold;
+  color: #333;
+}
+
+.FireEventsCard a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.FireEventsCard a:hover {
+  text-decoration: underline;
+}
+
+.FireEventsCard .fire-status {
+  background-color: #d9534f;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+  width: 100px;
+  margin: 10px auto 0 auto; /* Center the status label */
+}
+
+.FireEventsCard .view-button {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.FireEventsCard .view-button a {
+  display: inline-block;
+  padding: 15px 30px; /* Increase the size of the button */
+  background-color: #337ab7;
+  color: white;
+  border: 2px solid #285e8e; /* Add border */
+  border-radius: 10px; /* Add border radius */
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add hover animations */
+}
+
+.FireEventsCard .view-button a:hover {
+  background-color: #285e8e;
+  transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+.FireEventsCard .view-button a:active {
+  background-color: #1c3b62;
+  transform: translateY(0); /* Return to original position on click */
+}
+
+.viewbutton{
+  border: solid rgb(77, 3, 3) 2px;
+  border-radius: 5px;
+  width: 99px;
+  height: 32px;
+  background-color: rgba(255, 0, 0, 0.69);
+  color: rgb(243, 196, 10);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+.viewbutton:hover{
+  background-color: white;
+  border: double red 2px;
+}

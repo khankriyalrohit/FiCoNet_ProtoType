@@ -1,0 +1,19 @@
+.app {
+  /* display: flex; */
+  height: 100vh;
+}
+
+.map-container {
+  flex: 1;
+  position: relative;
+  /* border: solid blue 2px; */
+  margin-bottom: 130px;
+}
+.mainpage{
+  display: flex;
+  /* border: solid red 2px; */
+}
+.sidebar {
+  border-right: double rgb(82, 79, 79) 4px;
+  margin-bottom: 130px;
+}

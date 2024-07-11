@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.6));
+}
+
+.category.grey {
+  background: linear-gradient(to right, rgba(128, 128, 128, 0), rgba(128, 128, 128, 0.6));
+}
+
+.category.reddish-yellow {
+  background: linear-gradient(to right, rgba(255, 204, 0, 0), rgba(255, 204, 0, 0.6));
+}
+
+.category.blue {
+  background: linear-gradient(to right, rgba(0, 0, 255, 0), rgba(0, 0, 255, 0.6));
+}
+
+.category.reddish-orange {
+  background: linear-gradient(to right, rgba(255, 102, 51, 0), rgba(255, 102, 51, 0.6));
+}
+
+.category.orange {
+  background: linear-gradient(to right, rgba(255, 165, 0, 0), rgba(255, 165, 0, 0.6));
+}
+
+.category:hover {
+  opacity: 0.8;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}

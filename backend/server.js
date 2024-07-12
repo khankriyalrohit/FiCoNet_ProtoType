@@ -1,6 +1,7 @@
+// server.js
 require('dotenv').config();
 const express = require('express');
-const { MongoClient } = require('mongodb');
+const { MongoClient, ObjectId } = require('mongodb');
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -21,7 +22,7 @@ app.post('/api/fire-events', async (req, res) => {
     const database = client.db('FiCoNet'); // Your database name
     const fireEventsCollection = database.collection('fire_events');
 
-    const { sensor_id, latitude, longitude, time_of_active_fire, active_fire } = req.body;
+    const { sensor_id, latitude, longitude, time_of_active_fire, active_fire, location, state, region } = req.body;
 
     const result = await fireEventsCollection.updateOne(
       { sensor_id },
@@ -31,6 +32,9 @@ app.post('/api/fire-events', async (req, res) => {
           longitude,
           time_of_active_fire,
           active_fire,
+          location,
+          state,
+          region
         },
       },
       { upsert: true }

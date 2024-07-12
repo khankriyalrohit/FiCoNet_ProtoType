@@ -38,5 +38,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://ficonet-thdc-ihet.onrender.com/"
+  "proxy":"http://localhost:5000"
 }
+
+

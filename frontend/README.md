@@ -71,4 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-// "proxy": "https://ficonet-thdc-ihet.onrender.com/"
+// "proxy": "https://ficonet-thdc-ihet.onrender.com"
+
+"proxy": "http://localhost:5000"

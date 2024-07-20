@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const { MongoClient, ObjectId } = require('mongodb');
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -13,6 +14,7 @@ if (!uri) {
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
+app.use(cors()); // Add this line to enable CORS
 app.use(express.json());
 
 // Function to update or create a fire event

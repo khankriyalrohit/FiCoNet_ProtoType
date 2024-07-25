@@ -97,6 +97,8 @@ app.post('/api/fire-events', async (req, res) => {
       region
     );
 
+    console.log(`Fire event updated for sensor_id: ${sensor_id}`);
+
     // Schedule deletion of the fire event after 6 hours
     setTimeout(async () => {
       try {
